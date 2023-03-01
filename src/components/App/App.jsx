@@ -30,15 +30,15 @@ export default function App() {
 
 	return (
 		<div className={style.app}>
-			{!isLoading && actors.length ? (
-				<>
-					<div className={style.inner}>
-						<div onClick={toggleAddButton} className={style.addButton}>
-							Добавить
-						</div>
-						{addButton && <AddRow />}
-						<HeaderTable />
+			<>
+				<div className={style.inner}>
+					<div onClick={toggleAddButton} className={style.addButton}>
+						Добавить
+					</div>
+					{addButton && <AddRow />}
+					<HeaderTable />
 
+					{!isLoading && actors.length ? (
 						<Reorder.Group
 							as='div'
 							axis='y'
@@ -58,21 +58,22 @@ export default function App() {
 								/>
 							))}
 						</Reorder.Group>
-					</div>
-					<TextArea />
-				</>
-			) : (
-				<div
-					style={{
-						display: 'flex',
-						fontSize: '38px',
-						color: 'green',
-						justifyContent: 'center',
-					}}
-				>
-					Loading...
+					) : (
+						<div
+							style={{
+								display: 'flex',
+								fontSize: '38px',
+								color: 'green',
+								justifyContent: 'center',
+								margin: '50px auto',
+							}}
+						>
+							Loading... (возможно список пуст, добавьте строку)
+						</div>
+					)}
 				</div>
-			)}
+				<TextArea />
+			</>
 		</div>
 	);
 }
