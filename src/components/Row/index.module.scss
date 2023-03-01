@@ -1,0 +1,55 @@
+.row {
+	background: #ededed;
+	margin: 2px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	cursor: pointer;
+}
+
+.cell {
+	padding: 5px;
+	width: 240px;
+	border: 1px solid silver;
+	box-shadow: 0px 3px 5px #3dbdf669;
+}
+.btnGroup {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.btnUpdate {
+		font-weight: 500;
+		cursor: pointer;
+		color: #ffffff;
+		background: #26b242;
+		padding: 5px;
+		box-shadow: 0px 3px 5px #3dbdf669;
+		border: 1px solid #080808;
+		text-align: center;
+	}
+
+	.btnUpdate:hover {
+		background: #19722b;
+	}
+
+	.btnDelete {
+		font-weight: 500;
+		cursor: pointer;
+		color: #ffffff;
+		background: #f73232;
+		padding: 5px;
+		box-shadow: 0px 3px 5px #3dbdf669;
+		border: 1px solid #080808;
+		text-align: center;
+	}
+
+	.btnDelete:hover {
+		background: #9d1f1f;
+	}
+
+	.move {
+		cursor: all-scroll;
+		font-size: 20px;
+	}
+}

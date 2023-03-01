@@ -1,0 +1,30 @@
+.row {
+	background: #ededed;
+	margin: 10px 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	cursor: pointer;
+}
+
+.cell {
+	padding: 5px;
+	width: 240px;
+	border: 1px solid silver;
+	box-shadow: 0px 3px 5px #3dbdf669;
+}
+
+.btn {
+	font-weight: 500;
+	cursor: pointer;
+	color: #ffffff;
+	background: #3295f7;
+	padding: 5px;
+	box-shadow: 0px 3px 5px #3dbdf669;
+	border: 1px solid #080808;
+	text-align: center;
+}
+
+.btn:hover {
+	background: #2469ae;
+}
