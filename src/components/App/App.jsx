@@ -28,7 +28,6 @@ export default function App() {
 		setActorsState(actors);
 	}, [actors]);
 
-
 	return (
 		<div className={style.app}>
 			{!isLoading && actors.length ? (

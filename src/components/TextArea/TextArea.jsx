@@ -36,6 +36,7 @@ export default function TextArea() {
 				данные в JSON
 			</span>
 			<textarea
+				className={style.textarea}
 				onChange={handleInputChange}
 				placeholder={`Пример:
 				[

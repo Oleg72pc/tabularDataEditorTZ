@@ -35,7 +35,7 @@ export default function Row({ row }) {
 			as='div'
 			value={row}
 			whileDrag={{
-				outline: '2px solid green'
+				outline: '2px solid green',
 			}}
 		>
 			<form>

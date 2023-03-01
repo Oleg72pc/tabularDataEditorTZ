@@ -3,7 +3,7 @@ import {
 	ADD_ACTOR,
 	DELETE_ACTOR,
 	UPDATE_ACTOR,
-	UPDATE_LIST
+	UPDATE_LIST,
 } from '../actionTypes/actorsAT';
 
 export const initActorsAC = payload => {
@@ -36,4 +36,3 @@ export const updateListActorsAC = payload => {
 		payload,
 	};
 };
-
